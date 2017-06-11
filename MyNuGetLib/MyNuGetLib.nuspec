@@ -3,7 +3,7 @@
   <metadata>
     <id>MyNuGetLib2</id>
     <version>$version$</version>
-    <title>MyNuGetLib2</title>
+    <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
     <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
