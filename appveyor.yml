@@ -27,4 +27,4 @@ test: off
 
 deploy_script:
   - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
-  - ($artifacts.values | Where-Object { $_.path -like '*.nupkg' }) | foreach-object { write-host $_.path}
+  - ps: ($artifacts.values | Where-Object { $_.path -like '*.nupkg' }) | foreach-object { write-host $_.path}
