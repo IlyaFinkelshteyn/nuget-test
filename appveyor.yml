@@ -1,6 +1,6 @@
 version: 3.0.{build}
 
-environment
+environment:
   api_key:
     secure: 9f1tfKfxrHOsDPxKcstzU46FndPSu5/oPdKRRuLB4MF+eh8cA2TOKH0cvmxWQ2P5
 
