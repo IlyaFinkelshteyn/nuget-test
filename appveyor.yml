@@ -1,5 +1,9 @@
 version: 3.0.{build}
 
+environment
+  api_key:
+    secure: 9f1tfKfxrHOsDPxKcstzU46FndPSu5/oPdKRRuLB4MF+eh8cA2TOKH0cvmxWQ2P5
+
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
@@ -15,8 +19,12 @@ build:
   
 test: off
 
-deploy:
-- provider: NuGet
-  api_key:
-    secure: ZfrS0nUV9TSw0YypzdUzy253FQOg4ICgdAXrH0B83ofwHAysYIPGoV64WOQHsSa5
-  skip_symbols: true
+#deploy:
+#- provider: NuGet
+#  api_key:
+#    secure: 9f1tfKfxrHOsDPxKcstzU46FndPSu5/oPdKRRuLB4MF+eh8cA2TOKH0cvmxWQ2P5
+#  skip_symbols: true
+
+deploy_script:
+  - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+  - ($artifacts.values | Where-Object { $_.path -like '*.nupkg' }) | foreach-object { write-host $_.path}
