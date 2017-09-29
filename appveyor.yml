@@ -21,8 +21,8 @@ build:
 test: off
 
 #time to attach debugger
-init:
-- ps: sleep 20
+#init:
+#- ps: sleep 20
 
 #deploy:
 #- provider: NuGet
