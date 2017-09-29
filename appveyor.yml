@@ -24,14 +24,14 @@ test: off
 init:
 - ps: sleep 20
 
-deploy:
-- provider: NuGet
-  api_key:
-    #secure: Mcd+DRZEtMGvt5JtzC8a3VeN2jG7PNSpsfA8dM4nb37X78TJa1nW81pdpx0V2n6N
-    secure: 5a8Gq7E2Zux0sVrxSbw+9VKECHmk3NnvaBv1fc+g7ZAitrZ0oAGwBD3baOe/rPqG
-  skip_symbols: true
+№deploy:
+№- provider: NuGet
+№  api_key:
+№    #secure: Mcd+DRZEtMGvt5JtzC8a3VeN2jG7PNSpsfA8dM4nb37X78TJa1nW81pdpx0V2n6N
+№    secure: 5a8Gq7E2Zux0sVrxSbw+9VKECHmk3NnvaBv1fc+g7ZAitrZ0oAGwBD3baOe/rPqG
+№  skip_symbols: true
 
-#deploy_script:
-#  - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
-#  - nuget.exe setApiKey %api_key% -source https://www.nuget.org
-#  - ps: ($artifacts.values | Where-Object { $_.path -like '*.nupkg' }) | foreach-object {nuget.exe push $_.path -Source https://www.nuget.org/api/v2/package; if ($lastexitcode -ne 0) {throw}}
+deploy_script:
+  - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+  - nuget.exe setApiKey %api_key% -source https://www.nuget.org
+  - ps: ($artifacts.values | Where-Object { $_.path -like '*.nupkg' }) | foreach-object {nuget.exe push $_.path -Source https://www.nuget.org/api/v2/package; if ($lastexitcode -ne 0) {throw}}
