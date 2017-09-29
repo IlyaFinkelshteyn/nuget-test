@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$-2</id>
+    <id>$id$-3</id>
     <version>$version$</version>
-    <title>$title$-2</title>
+    <title>$title$-3</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
     <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
