@@ -2,7 +2,7 @@ version: 3.1.{build}
 
 environment:
   api_key:
-    secure: Mcd+DRZEtMGvt5JtzC8a3VeN2jG7PNSpsfA8dM4nb37X78TJa1nW81pdpx0V2n6N    
+    secure: 0e7KqumsrIryzlSBNyENrQF6PoRtbMGp6orXQMJQwX5OEzQywkN96AbtjRSfaJkL    
 
 assembly_info:
   patch: true
