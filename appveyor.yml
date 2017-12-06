@@ -28,8 +28,7 @@ test: off
 deploy:
 - provider: NuGet
   api_key:
-    #secure: 6vYCjfV9cZrn+xi5jQt3wuzs0E7EamVBtIv9WT9FdxG0oIhVRSm4MmHkPYODT/51 #my
-    secure: 5a8Gq7E2Zux0sVrxSbw+9VKECHmk3NnvaBv1fc+g7ZAitrZ0oAGwBD3baOe/rPqG #400
+      secure: ztxFfB40EEHAdY5EMxs9zuQm87m1onEaNC4O7HA357wIvVvMBnRrhpkssL4NIV4P
   skip_symbols: true
 
 #deploy_script:
