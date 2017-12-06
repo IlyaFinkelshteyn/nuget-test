@@ -4,12 +4,12 @@ environment:
   api_key:
     secure: 0e7KqumsrIryzlSBNyENrQF6PoRtbMGp6orXQMJQwX5OEzQywkN96AbtjRSfaJkL    
 
-#assembly_info:
-#  patch: true
-#  file: '**\AssemblyInfo.*'
-#  assembly_version: '{version}'
-#  assembly_file_version: '{version}'
-#  assembly_informational_version: '{version}'
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
 
 build:
   publish_nuget: true
