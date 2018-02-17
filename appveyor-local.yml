@@ -19,8 +19,8 @@ build:
 test: off
 
 #time to attach debugger
-#init:
-#- ps: sleep 20
+init:
+- ps: sleep 20
 
 #secure: 5a8Gq7E2Zux0sVrxSbw+9VKECHmk3NnvaBv1fc+g7ZAitrZ0oAGwBD3baOe/rPqG
 
