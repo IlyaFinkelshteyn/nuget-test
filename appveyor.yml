@@ -1,8 +1,7 @@
 version: 3.1.{build}
 
 environment:
-  api_key:
-    secure: 0e7KqumsrIryzlSBNyENrQF6PoRtbMGp6orXQMJQwX5OEzQywkN96AbtjRSfaJkL    
+  APPVEYOR_USE_NUGET_EXE_FOR_PUBLISHING: true
 
 assembly_info:
   patch: true
