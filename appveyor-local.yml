@@ -27,7 +27,7 @@ init:
 deploy:
 - provider: NuGet
   api_key:
-      secure: 0RweMb0xGqAJT/IIrYWbkz/VtMjXf/u+uHOiPSB0NyMaXFYli0VCvCIB8YUV7MKN
+      secure: MmqctDRVI50ECweqUDlTm8FNaSQghPwHxFD4KC1Orak+07OLd0XFKInSELdyTBIp
   #skip_symbols: true
 
 #deploy_script:
