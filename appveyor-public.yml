@@ -18,6 +18,9 @@ build:
   
 test: off
 
+install:
+- appveyor version
+
 deploy:
 - provider: NuGet
   api_key:
