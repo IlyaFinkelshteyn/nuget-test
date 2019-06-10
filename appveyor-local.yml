@@ -3,12 +3,12 @@ version: 3.1.{build}
 #environment:
 #  APPVEYOR_USE_NUGET_EXE_FOR_PUBLISHING: true
 
-assembly_info:
-  patch: true
-  file: '**\AssemblyInfo.*'
-  assembly_version: '{version}'
-  assembly_file_version: '{version}'
-  assembly_informational_version: '{version}'
+#assembly_info:
+#  patch: true
+#  file: '**\AssemblyInfo.*'
+#  assembly_version: '{version}'
+#  assembly_file_version: '{version}'
+#  assembly_informational_version: '{version}'
 
 build:
   publish_nuget: true
